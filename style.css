@@ -1,0 +1,17 @@
+  h1 {
+    color: blue;
+  }
+  h2 {
+    color: darkblue;
+  }
+  h3 {
+    color: lightgreen;
+  }
+  ul {
+    color: lightblue;
+    text-align: center;
+    list-style-position: inside;
+  }
+body {
+  background-color: green;
+}
