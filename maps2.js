@@ -10,12 +10,14 @@ var ourLoc;
 var view;
 var map;
 var gwc;
+var ahome;
 
 // Step 3: We should initalize our variables!
 function init() {
 	// Initalize things here
 	ourLoc = ol.proj.fromLonLat([41.043316, 28.862457]);
 	gwc = ol.proj.fromLonLat([-87.623177, 41.881832]);
+	ahome = ol.proj.fromLonLat([-87.716261, 41.712447])
 	view = new ol.View({
 		center: ourLoc,
 		zoom: 6 // Students can play around with the starting zoom.
@@ -43,6 +45,7 @@ function panHome(){
 	view.animate({
 		center:ourLoc,
 		duration: 2000
+
 	});
 
 }
@@ -88,7 +91,16 @@ function panToLocation(){
 function panToGWC(){
 	view.animate({
 		center: gwc,
-		duration: 2000
+		duration: 2000,
+		zoom: 20
 	});
+}
+function panToAnayaHome(){
+	view.animate({
+		center: ahome,
+		duration: 2000,
+		zoom: 20
+	});
+}
 // Step 4: We can run the init function when the window loads.
 window.onload = init;
