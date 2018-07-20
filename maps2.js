@@ -17,7 +17,7 @@ function init() {
 	// Initalize things here
 	ourLoc = ol.proj.fromLonLat([41.043316, 28.862457]);
 	gwc = ol.proj.fromLonLat([-87.623177, 41.881832]);
-	ahome = ol.proj.fromLonLat([-87.716261, 41.712447])
+	ahome = ol.proj.fromLonLat([-87.716261, 41.712447]);
 	view = new ol.View({
 		center: ourLoc,
 		zoom: 6 // Students can play around with the starting zoom.
